@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         better video controls
-// @version      1.1.8
+// @version      1.1.9
 // @description  various keyboard controls for html video elements, see console after page loads for keyboard shortcuts (uses the last video element that was clicked on).
 // @author       MAZ / MAZ01001
 // @source       https://github.com/MAZ01001/BetterVideoControls
@@ -193,6 +193,7 @@ function bvc_make_loop_interval(from,to){
  * - `,`                → (while paused) previous frame (1/60 sec)
  * - `:` (`shift` `.`)  → decrease playback speed by 10%
  * - `;` (`shift` `,`)  → increase playback speed by 10%
+ * - `M` (`shift` `m`)  → reset playback speed
  * - `j` / `ArrowLeft`  → rewind 5 seconds
  * - `l` / `ArrowRight` → fast forward 5 seconds
  * - `j` (`shift` `j`)  → rewind 30 seconds
@@ -258,6 +259,10 @@ function bvc_keyboard_event_listener(ev){
                 _bvc_last_video.playbackRate=0.1
                 text="speed already min (10 %)";
             }
+        break;
+        case'M':
+            _bvc_last_video.playbackRate=_bvc_last_video.defaultPlaybackRate;
+            text=`reset speed to ${_bvc_last_video.playbackRate}`;
         break;
         case'j':case"ArrowLeft":
             _bvc_last_video.currentTime-=5;
@@ -408,6 +413,7 @@ console.groupCollapsed(
             " [,]                            |  (while paused) previous frame (1/60 sec)                              ",
             " [:] ( [shift] [.] )            |  decrease playback speed by 10%                                        ",
             " [;] ( [shift] [,] )            |  increase playback speed by 10%                                        ",
+            " [M] ( [shift] [m] )            |  reset playback speed                                                  ",
             "--------------------------------+------------------------------------------------------------------------",
             " [j] / [ArrowLeft]              |  rewind 5 seconds                                                      ",
             " [l] / [ArrowRight]             |  fast forward 5 seconds                                                ",
