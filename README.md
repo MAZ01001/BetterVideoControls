@@ -20,7 +20,7 @@ The following table will also be logged to the console, including a functions to
 
 ## Keyboard controls
 
-<details open><summary>click to toggle table</summary>
+<details open><summary>Click to hide table</summary>
 
 | Keyboard (intended for QWERTZ) | Function                                                              |
 | ------------------------------ | --------------------------------------------------------------------- |
@@ -29,6 +29,7 @@ The following table will also be logged to the console, including a functions to
 | [0] - [9]                      | skip to []% of total duration (ie. key [8] skips to 80% of the video) |
 | [.]                            | (while paused) next frame (1/60 sec)                                  |
 | [,]                            | (while paused) previous frame (1/60 sec)                              |
+| [M] ( [shift] [m] )            | reset playback speed                                                  |
 | [:] ( [shift] [.] )            | decrease playback speed by 10%                                        |
 | [;] ( [shift] [,] )            | increase playback speed by 10%                                        |
 | [j] / [ArrowLeft]              | rewind 5 seconds                                                      |
