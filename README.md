@@ -26,28 +26,23 @@ The following table will also be logged to the console, including a functions to
 | ------------------------------ | --------------------------------------------------------------------- |
 | [alt] [c]                      | toggles controls (no visual cue)                                      |
 | [ctrl]                         | use the video element currently hovering over, if any (no visual cue) |
-|                                |                                                                       |
 | [0] - [9]                      | skip to []% of total duration (ie. key [8] skips to 80% of the video) |
 | [.]                            | (while paused) next frame (1/60 sec)                                  |
 | [,]                            | (while paused) previous frame (1/60 sec)                              |
 | [:] ( [shift] [.] )            | decrease playback speed by 10%                                        |
 | [;] ( [shift] [,] )            | increase playback speed by 10%                                        |
-|                                |                                                                       |
 | [j] / [ArrowLeft]              | rewind 5 seconds                                                      |
 | [l] / [ArrowRight]             | fast forward 5 seconds                                                |
 | [J] ( [shift] [j] )            | rewind 30 seconds                                                     |
 | [l] ( [shift] [l] )            | fast forward 30 seconds                                               |
 | [k]                            | pause / play video                                                    |
-|                                |                                                                       |
 | [+] / [ArrowUp]                | increase volume by 10%                                                |
 | [-] / [ArrowDown]              | lower volume by 10%                                                   |
 | [m]                            | mute / unmute video                                                   |
-|                                |                                                                       |
 | [R] ( [shift] [r] )            | setup custom loop (shows a menu)                                      |
 | [r]                            | toggle loop mode                                                      |
 | [f]                            | toggle fullscreen mode                                                |
 | [p]                            | toggle picture-in-picture mode                                        |
-|                                |                                                                       |
 | [t]                            | displays exact time and duration                                      |
 | [u]                            | displays current source url                                           |
 
